@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShreeSaiKites</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon32.png">
+<link rel="apple-touch-icon" sizes="128x128" href="assets/favicon128.png">
+</head>
+<body>
+
+    <header class="navbar" id="mainNav">
+        <div class="logo">
+            <a href="#">ShreeSai<span>Kites</span></a>
+        </div> 
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <span class="badge">Uttarayan Special 2026</span>
+            <h1>Color the sky with your <span> Dreams</span></h1>
+            <div class="hero-btns">
+                <a href="#product" class="cta-btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="section">
+        <h2 class="section-title">Products</h2>
+        <div class="product-slider">
+            <div class="product-card">
+                <div class="product-img-box"><img src="assets/K3.png" alt="Fancy Kite"></div>
+                <div class="product-info">
+                    <h3>Bareli</h3>
+                    <p class="price">₹60</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-box"><img src="assets/k26.png" alt="Strong Firki"></div>
+                <div class="product-info">
+                    <h3>Double Laddu Fumma</h3>
+                    <p class="price">₹60</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-box"><img src="assets/k44.png" alt="Strong Thread"></div>
+                <div class="product-info">
+                    <h3>Chill Laddu</h3>
+                    <p class="price">₹40</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-products-wrapper">
+            <a href="products.html" class="more-btn">View More Products</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-card minimal">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-numbers-list">
+                <div class="num-box color-changer">
+                    <span class="icon-img">📞💬</span> <span class="num-text">+919725999636</span>
+                </div>
+                <div class="num-box color-changer">
+                    <span class="icon-img">📞💬</span> <span class="num-text">+919106040714</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Honest Prices, Trusted Kites</h3>
+                <p>We sell kites at affordable prices so that everyone can enjoy flying them. Our goal is to make kite flying fun and accessible for all, without worrying about the cost.</p>
+            </div>
+            <div class="about-card">
+                <h3>Address</h3>
+                <p>House No.157, Sai Baba Society,
+Gate No. 4, Near Amro Auto, Pandesara,
+Surat Pincode – 394220, Gujarat, India</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-img-container"><img src="" id="modalImg"></div>
+                <div class="modal-info">
+                    <h2 id="modalName"></h2>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <button class="buy-btn second-back">Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 5UJAL | <span>ShreeSai</span>Kites</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

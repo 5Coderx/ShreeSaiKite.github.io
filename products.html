@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShreeSaiKites | Our Products</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon32.png">
+<link rel="apple-touch-icon" sizes="128x128" href="assets/favicon128.png">
+
+    <style>
+        /* Footer ko bottom mein rakhne ke liye body setting */
+        body {
+            background: var(--light);
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ye footer ko niche push karega */
+            margin: 0;
+        }
+
+        .back-nav-container {
+            position: fixed;
+            top: 25px;
+            right: 8%;
+            z-index: 2000;
+        }
+
+        .products-grid-container {
+            padding: 40px 8%;
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 30px;
+            justify-items: center;
+            flex: 1; /* Ye section bachi hui saari jagah le lega */
+        }
+
+        .page-card {
+            width: 100% !important;
+            max-width: 330px !important;
+            background: white;
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            text-align: center;
+            cursor: pointer;
+            transition: 0.4s;
+            border: 1px solid transparent;
+        }
+
+        .page-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.1);
+        }
+
+        .page-card .product-img-box img {
+            width: 100%;
+            height: 250px;
+            border-radius: 18px;
+            object-fit: contain;
+            background: #fdfdfd;
+        }
+
+        /* Responsive Settings */
+        @media (max-width: 1024px) {
+            .products-grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .products-grid-container {
+                grid-template-columns: 1fr;
+                padding: 20px 5%;
+                gap: 20px;
+            }
+            .back-nav-container {
+                top: 15px;
+                right: 5%;
+            }
+        }
+        
+        /* Footer Style Fix */
+        .footer {
+            width: 100%;
+            margin-top: auto; /* Footer ko bottom pe lock karne ke liye */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="back-nav-container">
+        <a href="index.html" class="cta-btn">Back</a>
+    </div>
+
+    <h2 class="section-title"><span>Our Products</span></h2>
+
+    <div class="products-grid-container">
+
+
+
+        <div class="product-card page-card">
+            <div class="product-img-box">
+                <img src="assets/K1.png" alt="Fancy Kite">
+            </div>
+            <div class="product-info">
+                <h3>Chill</h3>
+                <p class="price">₹40</p>
+            </div>
+        </div>
+
+
+
+        <div class="product-card page-card">
+            <div class="product-img-box">
+                <img src="assets/K2.png" alt="Strong Firki">
+            </div>
+            <div class="product-info">
+                <h3>Chill Single Laddu</h3>
+                <p class="price">₹35</p>
+            </div>
+        </div>
+
+
+
+                <div class="product-card page-card">
+            <div class="product-img-box">
+                <img src="assets/K3.png" alt="Strong Firki">
+            </div>
+            <div class="product-info">
+                <h3>Bareli</h3>
+                <p class="price">₹60</p>
+            </div>
+        </div>
+        
+                        <div class="product-card page-card">
+            <div class="product-img-box">
+                <img src="assets/K4.png" alt="Strong Firki">
+            </div>
+            <div class="product-info">
+                <h3>Design Chill</h3>
+                <p class="price">₹40</p>
+            </div>
+        </div>
+
+        <div class="product-card page-card">
+            <div class="product-img-box">
+                <img src="assets/K5.png" alt="Special Manjha">
+            </div>
+            <div class="product-info">
+                <h3>PattaWala Bareli</h3>
+                <p class="price">₹60</p>
+            </div>
+        </div>
+
+
+                <div class="product-card page-card">
+            <div class="product-img-box">
+                <img src="assets/K6.png" alt="Special Manjha">
+            </div>
+            <div class="product-info">
+                <h3>design Theli</h3>
+                <p class="price">₹35</p>
+            </div>
+        </div>
+
+
+
+        <div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K7.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Bareli</h3>
+        <p class="price">₹60</p>
+    </div>
+</div>
+
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K8.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Choti Theli</h3>
+        <p class="price">₹20</p>
+    </div>
+</div>
+
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K9.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Chill</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K10.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Safed Chill</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K12.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Diamond Fafda</h3>
+        <p class="price">₹80</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K13.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Chill Laddu</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K14.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Matka Theli</h3>
+        <p class="price">₹45</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K15.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Diamond Puchdi</h3>
+        <p class="price">₹25</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K16.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Chota Bareli</h3>
+        <p class="price">₹45</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K17.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Fafda Double Laddu</h3>
+        <p class="price">₹50</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K18.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Fafda Dil</h3>
+        <p class="price">₹50</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K19.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Theli Laddu</h3>
+        <p class="price">₹50</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K20.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Golden Theli Fafda</h3>
+        <p class="price">₹50</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K21.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>PuchdiWali Thali</h3>
+        <p class="price">₹45</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K22.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Chand Tara Patang</h3>
+        <p class="price">₹50</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K23.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Plain Fumma</h3>
+        <p class="price">₹55</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K24.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Star Bareli</h3>
+        <p class="price">₹60</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K25.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Plain Bareli</h3>
+        <p class="price">₹60</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K26.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Double Laddu Fumma</h3>
+        <p class="price">₹60</p>
+    </div>
+</div>
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K27.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Plain Fafda</h3>
+        <p class="price">₹50</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K28.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Design Fafda</h3>
+        <p class="price">₹50</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K29.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Tiranga Fafda</h3>
+        <p class="price">₹50</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K30.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Butter Paper Patang</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K31.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Chill</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K32.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Single Laddu</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K33.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Plain Chill</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K34.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Cup Tiranga</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K35.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Chill</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K36.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Puchdi Patang</h3>
+        <p class="price">₹35</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K37.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Design Laddu</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K38.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Patta Thedi</h3>
+        <p class="price">₹35</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K39.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Design Theli
+        </h3>
+        <p class="price">₹35</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K40.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Diamond Patang</h3>
+        <p class="price">₹35</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K41.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Laddu Patang</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K42.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Design Chill</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K43.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Tiranga</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K44.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Chill Laddu</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+
+<div class="product-card page-card">
+    <div class="product-img-box">
+        <img src="assets/K45.png" alt="Special Manjha">
+    </div>
+    <div class="product-info">
+        <h3>Khambati Chill</h3>
+        <p class="price">₹40</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 5UJAL | <span>ShreeSai</span>Kites</p>
+    </footer>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-img-container"><img src="" id="modalImg"></div>
+                <div class="modal-info">
+                    <h2 id="modalName"></h2>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <button class="buy-btn second-back">Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
